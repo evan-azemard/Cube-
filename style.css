@@ -1,0 +1,927 @@
+
+body{
+    min-height: 100vh;
+    padding-top: 15%;
+}
+/********Text h1********/
+.backgroundHeader {
+    height: 70%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+p{
+    color: white;
+}
+#contentTitle{
+    width: 30%;
+    padding: 5%;
+    font-size: 5rem;
+}
+
+/*Section1*/
+
+#content {
+    width: 100%;
+}
+
+.cube1 {
+    display: none;
+}
+#content_section1 {
+    height: 80%;
+    width: 100%;
+    margin-top: -3.6%;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerCube{
+    width: 100%;
+    margin-top: 3%;
+}
+
+#container {
+    width: 350px;
+    height: 50%;
+    perspective: 1000px;
+    margin: 100px auto 0;
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cube 15s infinite cubic-bezier(.25,.6,0,-0.74);
+
+}
+.top {
+    background-image: url("./img/slisht.png");
+    animation: cubeXXX 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.bottom {
+    background-image: url("./img/slisht.png");
+    animation: cubeXXXX 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.right {
+    background-image: url("./img/slisht.png");
+    animation: cubeYY 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.left {
+    background-image: url("./img/slisht.png");
+    animation: cubeY 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.front {
+    background-image: url("./img/slisht.png");
+    animation: cubeXX 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.back {
+    background-image: url("./img/slisht.png");
+    animation: cubeX 13s reverse infinite;
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+.face {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    background-image: url("./img/slisht.png");
+    box-shadow: -5px -5px 50px rgba(226, 223, 223, 0.14), inset 2px 2px 50px rgba(242, 242, 242, 0.12);
+
+}
+/*Text cube*/
+#cubeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#pureCss{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cssText{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+@keyframes cubeX {
+    0% {
+        transform: rotateX(180deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateX(180deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateX(180deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateX(180deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateX(180deg) translateZ(167px);
+    }
+}
+@keyframes cubeXXX {
+    0% {
+        transform: rotateX(90deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateX(90deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateX(90deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateX(90deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateX(90deg) translateZ(167px);
+    }
+}
+@keyframes cubeXXXX {
+    0% {
+        transform: rotateX(-90deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateX(-90deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateX(-90deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateX(-90deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateX(-90deg) translateZ(167px);
+    }
+}
+@keyframes cubeXX {
+    0% {
+        transform: rotateX(0deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateX(0deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateX(0deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateX(0deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateX(0deg) translateZ(167px);
+    }
+}
+@keyframes cubeY {
+    0% {
+        transform: rotateY(90deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateY(90deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateY(90deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateY(90deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateY(90deg) translateZ(167px);
+    }
+}
+@keyframes cubeYY {
+    0% {
+        transform: rotateY(-90deg) translateZ(300px);
+    }
+    0.5% {
+        transform: rotateY(-90deg) translateZ(167px);
+    }
+    50% {
+        transform: rotateY(-90deg) translateZ(167px);
+    }
+    55% {
+        transform: rotateY(-90deg) translateZ(300px);
+    }
+    100% {
+        transform: rotateY(-90deg) translateZ(167px);
+    }
+}
+@keyframes cube {
+
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 1600px){
+
+    .face{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        background-image: url("./img/slisht.png");
+    }
+    @keyframes cubeX {
+        0% {
+            transform: rotateX(180deg) translateZ(270px);
+        } 0.5%
+          {
+              transform: rotateX(180deg) translateZ(122.5px);
+          }50%
+           {
+               transform: rotateX(180deg) translateZ(122.5px);
+           }
+        55%
+        {
+            transform: rotateX(180deg) translateZ(270px);
+        }
+        100%
+        {
+            transform: rotateX(180deg) translateZ(122.5px);
+        }
+    }
+
+    @keyframes cubeXXX {
+        0%
+        {
+            transform: rotateX(90deg) translateZ(270px);
+        }0.5%
+         {
+             transform: rotateX(90deg) translateZ(122.5px);
+         }50%
+          {
+              transform: rotateX(90deg) translateZ(122.5px);
+          }
+        55%
+        {
+            transform: rotateX(90deg) translateZ(270px);
+        }
+        100%
+        {
+            transform: rotateX(90deg) translateZ(122.5px);
+        }
+    }
+
+    @keyframes cubeXXXX {
+        0%
+        {
+            transform: rotateX(-90deg) translateZ(270px);
+        } 0.5%
+          {
+              transform: rotateX(-90deg) translateZ(122.5px);
+          }50%
+           {
+               transform: rotateX(-90deg) translateZ(122.5px);
+           }
+        55%
+        {
+            transform: rotateX(-90deg) translateZ(270px);
+        }
+        100%
+        {
+            transform: rotateX(-90deg) translateZ(122.5px);
+        }
+    }
+
+
+    @keyframes cubeXX {
+        0%
+        {
+            transform: rotateX(0deg) translateZ(270px);
+        }  0.5%
+           {
+               transform: rotateX(0deg) translateZ(122.5px);
+           }50%
+            {
+                transform: rotateX(0deg) translateZ(122.5px);
+            }
+        55%
+        {
+            transform: rotateX(0deg) translateZ(270px);
+        }
+        100%
+        {
+            transform: rotateX(0deg) translateZ(122.5px);
+        }
+    }
+
+    @keyframes cubeY {
+        0%
+        {
+            transform: rotateY(90deg) translateZ(270px);
+        } 0.5%
+          {
+              transform: rotateY(90deg) translateZ(122.5px);
+          } 50%
+            {
+                transform: rotateY(90deg) translateZ(122.5px);
+            }
+        55%
+        {
+            transform: rotateY(90deg) translateZ(270px);
+        }
+        100%
+        {
+            transform: rotateY(90deg) translateZ(122.5px);
+        }
+    }
+
+    @keyframes cubeYY {
+        0%
+        {
+            transform: rotateY(-90deg) translateZ(270px);
+        }0.5%
+         {
+             transform: rotateY(-90deg) translateZ(122.5px);
+         }
+        50%
+        {
+            transform: rotateY(-90deg) translateZ(122.5px);
+        }55%
+         {
+             transform: rotateY(-90deg) translateZ(270px);
+         }
+        100%
+        {
+            transform: rotateY(-90deg) translateZ(122.5px);
+        }
+    }
+
+    @keyframes cube {
+
+        from{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1225px){
+
+    .face{
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background-image: url("./img/slisht.png");
+    }
+    @keyframes cubeX {
+        0% {
+            transform: rotateX(180deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateX(180deg) translateZ(100px);
+          }50%
+           {
+               transform: rotateX(180deg) translateZ(100px);
+           }
+        55%
+        {
+            transform: rotateX(180deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(180deg) translateZ(100px);
+        }
+    }
+
+    @keyframes cubeXXX {
+        0%
+        {
+            transform: rotateX(90deg) translateZ(200px);
+        }0.5%
+         {
+             transform: rotateX(90deg) translateZ(100px);
+         }50%
+          {
+              transform: rotateX(90deg) translateZ(100px);
+          }
+        55%
+        {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+    }
+
+    @keyframes cubeXXXX {
+        0%
+        {
+            transform: rotateX(-90deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateX(-90deg) translateZ(100px);
+          }50%
+           {
+               transform: rotateX(-90deg) translateZ(100px);
+           }
+        55%
+        {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+    }
+    @keyframes cubeXX {
+        0%
+        {
+            transform: rotateX(0deg) translateZ(200px);
+        }  0.5%
+           {
+               transform: rotateX(0deg) translateZ(100px);
+           }50%
+            {
+                transform: rotateX(0deg) translateZ(100px);
+            }
+        55%
+        {
+            transform: rotateX(0deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(0deg) translateZ(100px);
+        }
+    }
+
+    @keyframes cubeY {
+        0%
+        {
+            transform: rotateY(90deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateY(90deg) translateZ(100px);
+          } 50%
+            {
+                transform: rotateY(90deg) translateZ(100px);
+            }
+        55%
+        {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+    }
+    @keyframes cubeYY {
+        0%
+        {
+            transform: rotateY(-90deg) translateZ(200px);
+        }0.5%
+         {
+             transform: rotateY(-90deg) translateZ(100px);
+         }
+        50%
+        {
+            transform: rotateY(-90deg) translateZ(100px);
+        }55%
+         {
+             transform: rotateY(-90deg) translateZ(200px);
+         }
+        100%
+        {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+    }
+
+    @keyframes cube {
+
+        from{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+
+    .cube{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: cube 5s infinite linear;
+    }
+
+    #containerCube{
+        width: 100%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+}
+
+
+@media screen and (max-width: 781px){
+
+
+    .face{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-image: url("./img/slisht.png");
+    }
+
+    #containerCube{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /*margin-left: 15%;*/
+    }
+    .backgroundHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #contentTitle{
+        width: 50%;
+        margin-left: 20%;
+    }
+    #textAnim{
+        font-size: 3rem;
+    }
+
+    .cube{
+        width: 80%;
+        height: 80%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: cube 5s infinite linear;
+    }
+
+    @keyframes cubeX {
+        0% {
+            transform: rotateX(180deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateX(180deg) translateZ(79px);
+          }50%
+           {
+               transform: rotateX(180deg) translateZ(79px);
+           }
+        55%
+        {
+            transform: rotateX(180deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(180deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cubeXXX {
+        0%
+        {
+            transform: rotateX(90deg) translateZ(200px);
+        }0.5%
+         {
+             transform: rotateX(90deg) translateZ(79px);
+         }50%
+          {
+              transform: rotateX(90deg) translateZ(79px);
+          }
+        55%
+        {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(90deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cubeXXXX {
+        0%
+        {
+            transform: rotateX(-90deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateX(-90deg) translateZ(79px);
+          }50%
+           {
+               transform: rotateX(-90deg) translateZ(79px);
+           }
+        55%
+        {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(-90deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cubeXX {
+        0%
+        {
+            transform: rotateX(0deg) translateZ(200px);
+        }  0.5%
+           {
+               transform: rotateX(0deg) translateZ(79px);
+           }50%
+            {
+                transform: rotateX(0deg) translateZ(79px);
+            }
+        55%
+        {
+            transform: rotateX(0deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateX(0deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cubeY {
+        0%
+        {
+            transform: rotateY(90deg) translateZ(200px);
+        } 0.5%
+          {
+              transform: rotateY(90deg) translateZ(79px);
+          } 50%
+            {
+                transform: rotateY(90deg) translateZ(79px);
+            }
+        55%
+        {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        100%
+        {
+            transform: rotateY(90deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cubeYY {
+        0%
+        {
+            transform: rotateY(-90deg) translateZ(200px);
+        }0.5%
+         {
+             transform: rotateY(-90deg) translateZ(79px);
+         }
+        50%
+        {
+            transform: rotateY(-90deg) translateZ(79px);
+        }55%
+         {
+             transform: rotateY(-90deg) translateZ(200px);
+         }
+        100%
+        {
+            transform: rotateY(-90deg) translateZ(79px);
+        }
+    }
+
+    @keyframes cube {
+
+        from{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .cube{
+        width: 80%;
+        height: 80%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: cube 5s infinite linear;
+    }
+
+    .face{
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        background-image: url("./img/slisht.png");
+    }
+    #container{
+        width: 50%;
+        height: 50%;
+    }
+    #containerCube{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .backgroundHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #contentTitle{
+        width: 50%;
+        margin-left: 20%;
+    }
+    #textAnim{
+        font-size: 2rem;
+    }
+
+    .cube{
+        width: 175px;
+        height: 175px;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: cube 16s infinite linear;
+    }
+
+    .top{
+        background-image: url("./img/slisht.png");
+        animation: cubeXXX 13.3s  reverse infinite;
+    }
+    .bottom{
+        background-image: url("./img/slisht.png");
+
+        animation: cubeXXXX 13.3s  reverse infinite;
+    }
+
+    .right{
+        background-image: url("./img/slisht.png");
+        animation: cubeYY 13.3s  reverse infinite;
+    }
+
+    .left{
+        background-image: url("./img/slisht.png");
+        animation: cubeY 13.3s  reverse  infinite;
+
+    }
+    .front{
+        background-image: url("./img/slisht.png");
+        animation: cubeXX 13.3s  reverse infinite;
+
+    }
+    .back{
+        background-image: url("./img/slisht.png");
+        animation: cubeX 13.3s  reverse infinite;
+    }
+
+    @keyframes cubeX {
+        0% {
+            transform: rotateX(180deg) translateZ(100px);
+        } 0.5%
+          {
+              transform: rotateX(180deg) translateZ(65px);
+          }50%
+           {
+               transform: rotateX(180deg) translateZ(65px);
+           }
+        55%
+        {
+            transform: rotateX(180deg) translateZ(100px);
+        }
+        100%
+        {
+            transform: rotateX(180deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cubeXXX {
+        0%
+        {
+            transform: rotateX(90deg) translateZ(100px);
+        }0.5%
+         {
+             transform: rotateX(90deg) translateZ(65px);
+         }50%
+          {
+              transform: rotateX(90deg) translateZ(65px);
+          }
+        55%
+        {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        100%
+        {
+            transform: rotateX(90deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cubeXXXX {
+        0%
+        {
+            transform: rotateX(-90deg) translateZ(100px);
+        } 0.5%
+          {
+              transform: rotateX(-90deg) translateZ(65px);
+          }50%
+           {
+               transform: rotateX(-90deg) translateZ(65px);
+           }
+        55%
+        {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        100%
+        {
+            transform: rotateX(-90deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cubeXX {
+        0%
+        {
+            transform: rotateX(0deg) translateZ(100px);
+        }  0.5%
+           {
+               transform: rotateX(0deg) translateZ(65px);
+           }50%
+            {
+                transform: rotateX(0deg) translateZ(65px);
+            }
+        55%
+        {
+            transform: rotateX(0deg) translateZ(100px);
+        }
+        100%
+        {
+            transform: rotateX(0deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cubeY {
+        0%
+        {
+            transform: rotateY(90deg) translateZ(100px);
+        } 0.5%
+          {
+              transform: rotateY(90deg) translateZ(65px);
+          } 50%
+            {
+                transform: rotateY(90deg) translateZ(65px);
+            }
+        55%
+        {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        100%
+        {
+            transform: rotateY(90deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cubeYY {
+        0%
+        {
+            transform: rotateY(-90deg) translateZ(100px);
+        }0.5%
+         {
+             transform: rotateY(-90deg) translateZ(65px);
+         }
+        50%
+        {
+            transform: rotateY(-90deg) translateZ(65px);
+        }55%
+         {
+             transform: rotateY(-90deg) translateZ(100px);
+         }
+        100%
+        {
+            transform: rotateY(-90deg) translateZ(65px);
+        }
+    }
+
+    @keyframes cube {
+        from{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        to{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+}
+
+
